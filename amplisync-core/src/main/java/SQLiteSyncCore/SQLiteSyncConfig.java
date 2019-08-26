@@ -33,10 +33,12 @@ import java.util.Properties;
 public class SQLiteSyncConfig {
 
     public static Boolean IsConfigLoaded = false;
-    public static String DBURL = "jdbc:mysql://127.0.0.1:3306/sqlitesync?rewriteBatchedStatements=true";
+    //    public static String DBURL = "jdbc:mysql://127.0.0.1:3306/sqlitesync?rewriteBatchedStatements=true";
+    public static String DBURL = "jdbc:mariadb://localhost:3306/callhelper?rewriteBatchedStatements=true";
     public static String DBUSER = "root";
-    public static String DBPASS = "pass";
-    public static String DBDRIVER = "com.mysql.cj.jdbc.Driver";
+    public static String DBPASS = "root";
+    //    public static String DBDRIVER = "com.mysql.cj.jdbc.Driver";
+    public static String DBDRIVER = "org.mariadb.jdbc.Driver";
     public static String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
     public static Integer HISTORY_DAYS = 7;
     public static String WORKING_DIR = "../working dir/";
